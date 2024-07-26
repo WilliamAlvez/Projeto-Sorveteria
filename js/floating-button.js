@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const btnSend = document.querySelector("#send-mensager");
 const inputModal = document.querySelector('#input-modal');
-console.log(inputModal);
+
 const mensagemSucesso = document.querySelector('.mensagem-sucesso');
-console.log(mensagemSucesso)
+
 
 btnSend.addEventListener("click", () => {
     const temValor = inputModal.value != ''
-    console.log(temValor);
+    
     
     if(temValor){
     inputModal.style.display = 'none'
