@@ -1,0 +1,72 @@
+@charset "UTF-8";
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(25, 160, 244, 0.5); 
+    height: 8vh;
+    width:100%;
+    position:fixed;
+    z-index: 1000;
+}
+
+main {
+    height: 500px;   
+    background-image: url(none);
+    background-color: rgba(25, 160, 244, 0.5); 
+    padding: 10px 0 10px 0px;   
+}
+
+.titulo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35pt;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.titulo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px; 
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.titulo1 h2 {
+    padding-top: 85px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    color: rgb(46, 45, 46);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-sabores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center; 
+}
+
+.texto-desc {
+    text-align: center;
+}
+
+.foto-sabores img {
+    max-width: 100%;
+    height: 310px;
+    object-fit: cover; 
+}
+
+.texto-desc p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    max-width: 250px;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 11pt;
+}

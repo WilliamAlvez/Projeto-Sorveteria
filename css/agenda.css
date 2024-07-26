@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+nav1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(25, 160, 244, 0.5);
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+}
+
+main {
+    height: 250px;   
+    background-image: url(none);
+    background-color: rgba(25, 160, 244, 0.5);
+    padding: 10px 0;   
+}
+
+/* botao para voltar */
+.buttons6 {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: left; 
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1880px;
+
+}
+
+.buttons6 button {
+    height: 32px;
+    text-align: center;
+    font-size: 15px;
+    background-color: transparent;
+    color: rgb(46, 45, 46);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial;
+    font-weight: bold;
+    border: none;
+}
+
+.titulo1 {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: left; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo1 h1, .titulo1 h2, .titulo1 h3 {
+    text-align: left; 
+    max-width: 899px;
+    width: 100%; 
+}
+
+.titulo1 h1 {
+    padding-top: 55px;
+    font-size: 20pt;
+    color: rgb(24, 24, 24);
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.titulo1 h2 {
+    padding-top: 10px;
+    font-size: 11pt;
+    color: rgb(24, 24, 24);
+    margin-top: 20px;
+
+}
+
+.titulo1 h3 {
+    padding-top:10px;
+    font-size: 11pt;
+    color: rgb(56, 56, 56);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contact-agenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px); 
+}
+
+.contact-agenda input  {
+    width: 90%;
+    height: 20px; 
+    padding: 7px;
+    margin: 8px 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-agenda textarea {
+    height: 20px; 
+    margin-right: 50%;
+    width: 95%;
+    padding: 7px;
+    font-size: 14px;
+    overflow-y: auto;
+}
+
+.contact-agenda button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.carrinho {
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrinho h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(56, 56, 56);
+}
+
+/* Estilo do botão */
+.buttons5 {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.buttons5 button {
+    height: 32px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid rgba(78, 77, 78, 1);
+    border-radius: 1px;
+    background-color: rgb(229, 229, 229);
+    color: rgb(46, 45, 46);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial;
+    font-weight: bold;
+    box-shadow: 1px #000000;
+    font-size: 14px;
+}
+
+.buttons5 button:hover {
+    background-color: rgba(78, 77, 78, 1);
+    border: none;
+    color: rgb(255, 255, 255); 
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000; 
+}
+
+.floating-button:hover {
+    background-color: #0056b3;
+}
+
+.message-box {
+    position: fixed;
+    bottom: 100px; 
+    right: 20px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    display: none; 
+    z-index: 1000;
+}
+
+.message-box h2 {
+    margin-top: 0;
+}
+
+.message-box textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.message-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.message-box button:hover {
+    background-color: #0056b3;
+}
+
+.message-box #close-message-box {
+    background-color: #ccc;
+}
+
+.message-box #close-message-box:hover {
+    background-color: #aaa;
+}

@@ -1,0 +1,765 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Belinda W00 Regular", sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Belinda W00 Regular", sans-serif;
+
+}
+
+@font-face {
+  font-family: "Belinda W00 Regular";
+  src: url("https://db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.eot");
+  src: url("https://db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.svg#Belinda W00 Regular")
+      format("svg");
+}
+
+/*header*/
+
+header a:not(.logo) {
+  display: block;
+  color: rgba(244, 14, 102, 0.879);
+  text-decoration: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid crimson;
+  overflow: hidden;
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+header a:not(.logo)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.1rem;
+  z-index: -1;
+  transition: 0.2s ease-in;
+  transform: translateX(-101%);
+  background: crimson;
+  font-family: "Belinda W00 Regular", sans-serif;
+}
+
+header a:not(.logo):hover::before {
+  transform: translateX(0);
+}
+
+header a:not(.logo):hover {
+  color: rgb(216, 215, 215);
+  opacity: 0.7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: rgba(244, 14, 102, 0.879);
+  font-family: "Belinda W00 Regular", sans-serif;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo span:hover {
+  color: rgb(216, 215, 215);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(25, 160, 244, 0.5);
+  height: 8vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+
+/*background titulo*/
+
+main {
+  background: url("../assets/baac51_e0fcec6e8aea4b6bb748dafd98b52c5b.webp")
+    no-repeat center center;
+  background-color: rgb(103, 218, 241);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  display: flex;
+  position: static;
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  padding: 100px 20px;
+  text-align: center;
+  padding-top: 270px;
+  font-size: 50pt;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.buttons a,
+.buttons1 a,
+.buttons2 button,
+.buttons3 a,
+.buttons4 a {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  font-size: 20px;
+  border: 2px solid rgba(78, 77, 78, 1);
+  border-radius: 1px;
+  background-color: transparent;
+  color: rgb(46, 45, 46);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial;
+  font-weight: bold;
+  box-shadow: 15px #000000;
+}
+
+.buttons a:hover,
+.buttons1 a:hover,
+.buttons2 button:hover,
+.buttons3 a:hover,
+.buttons4 a:hover {
+  background-color: rgba(78, 77, 78, 1);
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.buttons2 button {
+  padding-bottom: 25px;
+}
+
+.buttons3 a {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 14px;
+}
+.buttons1 a,
+.buttons2 button,
+.buttons4 a {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgba(78, 77, 78, 1);
+  font-size: 14px;
+}
+
+/*menu-mobile*/
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu-btn {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  font-size: 30px;
+  color: rgba(244, 14, 102, 0.879);
+  display: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.mobile-menu-btn:hover {
+  transform: rotate(180deg);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 999px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+    .buttons {
+      display: none;
+    }
+  }
+  .nav-list {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 35vw;
+    height: 92vh;
+    background-color: rgba(25, 160, 244, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/*corpo*/
+
+.about,
+.about2 {
+  display: flex;
+  width: 100%;
+  height: 55vh;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+}
+.about .imagem {
+  background: url("../assets/th.jpg") no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.about .texto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about .texto h2,
+.about .texto p {
+  margin: 10px 0;
+}
+
+.about .texto h2 {
+  font-size: 30pt;
+  margin-bottom: -10px;
+  font-family: sans-serif;
+  color: rgb(99, 98, 99);
+}
+
+.about .texto h3 {
+  font-size: 22pt;
+  margin-bottom: 40px;
+  color: rgb(99, 98, 99);
+}
+
+.about .texto p {
+  font-size: 14pt;
+  color: rgb(99, 98, 99);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.buttons a {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  padding: 15px 50px 15px 50px;
+  font-size: 20px;
+  border: 2px solid rgba(78, 77, 78, 1);
+  border-radius: 1px;
+  background-color: transparent;
+  color: rgb(46, 45, 46);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial;
+  box-shadow: 15px #000000;
+}
+
+.buttons a:hover {
+  background-color: rgba(78, 77, 78, 1);
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.about1 {
+  display: flex;
+  width: 100%;
+  height: 55vh;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+  flex-direction: row-reverse;
+}
+.about1 .imagem {
+  background: url("../assets/mesa-com-cadeiras-na-praia_664601-3682.avif") no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.about1 .texto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about1 .texto h2,
+.about .texto p {
+  margin: 10px 0;
+}
+
+.about1 .texto h2 {
+  font-size: 30pt;
+  margin-bottom: -10px;
+  font-family: sans-serif;
+  color: rgb(99, 98, 99);
+}
+
+.about1 .texto h3 {
+  font-size: 20pt;
+  margin-bottom: 40px;
+  color: rgb(99, 98, 99);
+}
+
+.about1 .texto p {
+  font-size: 14pt;
+  color: rgb(99, 98, 99);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.about2 .imagem {
+  background: url("../assets/Dolcetti-gallery-img-1.jpg") no-repeat center
+    center;
+  background-size: cover;
+  width: 50%;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.about2 .texto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about2 .texto h2,
+.about .texto p {
+  margin: 10px 0;
+}
+
+.about2 .texto h2 {
+  font-size: 30pt;
+  margin-bottom: -10px;
+  font-family: sans-serif;
+  color: rgb(99, 98, 99);
+}
+
+.about2 .texto h3 {
+  font-size: 22pt;
+  margin-bottom: 40px;
+  color: rgb(99, 98, 99);
+}
+
+.about2 .texto p {
+  font-size: 14pt;
+  color: rgb(99, 98, 99);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* background de fundo */
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.banner-sabores {
+  background-image: url("../assets/_98c9316a-6627-40b8-ac02-4fd87b744348.jpeg");
+  background-position: center center;
+  position: relative;
+}
+
+.banner-sabores {
+  width: 100%;
+  height: 500px;
+}
+
+.banner-sabores h2 {
+  font-family: sans-serif;
+  font-size: 25pt;
+  padding-bottom: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-sabores h1 {
+  font-family: sans-serif;
+  font-size: 80pt;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-eventos {
+  background-image: url("../assets/Dolcetti-gallery-img-2.jpg");
+  position: relative;
+  background-position: center center;
+  width: 100%;
+  height: 550px;
+}
+
+
+.banner-eventos h2 {
+  font-family: sans-serif;
+  font-size: 38px;
+  padding-bottom: 40px;
+  color: rgb(224, 227, 227);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-eventos h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: rgb(224, 227, 227);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.banner-fundo {
+  background-image: url("../assets/abstrato-base-aquarela-de-linhas-cores-neon-tons-pastel-estilo-aquarela_700253-365.avif");
+  position: relative;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 140px;
+}
+
+.content img {
+  display: block;
+  -webkit-user-select: none;
+  transition: transform 0.3s, background-color 300ms;
+  width: 2500px;
+  height: 906px;
+  padding-top: 50px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transform: scale(1);
+}
+
+@media (min-width: 600px) {
+  .content img {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 900px) {
+  .content img {
+    transform: scale(1.2), (1);
+  }
+}
+
+@media (min-width: 1200px) {
+  .content img {
+    transform: scale(1.3), (1);
+  }
+}
+
+.banner-fundo h1 {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  font-size: 33px;
+  color: rgb(46, 45, 46);
+  text-align: center;
+  font-weight: none;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 200px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.container:hover .item {
+  animation-play-state: paused;
+  filter: grayscale(6);
+}
+
+.container .item:hover {
+  filter: grayscale(0);
+}
+
+.carrosel {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1990px) {
+  .item {
+    width: calc(100% / 3);
+  }
+}
+
+.item {
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    height: 430px;
+  }
+
+  .item {
+    height: 100%;
+  }
+}
+
+/* Media query para telas menores (mobile) */
+
+@media (max-width: 400px) {
+  .container {
+    height: auto;
+    mask-image: none;
+  }
+
+  .carrosel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .item {
+    scroll-snap-align: start;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+/*rodape*/
+
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px 30px 0;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer .informacoes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .informacao {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 11pt;
+  padding: 30px;
+}
+
+.footer .informacao p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15pt;
+  align-items: center;
+}
+
+.footer form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.footer label {
+  margin-bottom: 0px;
+  max-width: 600px;
+}
+
+.footer input {
+  width: 140%;
+  height: 0px;
+  padding: 17px;
+  padding-top: 10;
+  margin-bottom: 0;
+  text-align: left;
+  background-color: rgb(28, 27, 27);
+  font-size: 16px;
+  color: white;
+  border-color: (var rgba(163, 217, 246), 1);
+  border-style: solid;
+  border-width: var(1xp);
+  cursor: pointer;
+}
+
+.footer input:hover {
+  background-color: rgb(28, 27, 27);
+  opacity: 0.7;
+  border-radius: 0.2rem;
+  border: 5px solid rgba(255, 255, 255, 0.907);
+}
+
+.footer button {
+  width: 156%;
+  height: 32px;
+  padding: 0px;
+  padding-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  font-size: 12pt;
+  transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+  background-color: rgb(28, 27, 27);
+  border: none;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.footer .social-icons img {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.footer .social-icons img:hover {
+  filter: grayscale(0);
+}
+
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+}

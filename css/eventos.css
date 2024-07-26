@@ -1,0 +1,127 @@
+@charset "UTF-8";
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(25, 160, 244, 0.5);
+    height:8vh;
+    width:100%;
+    position:fixed;
+    z-index: 1000;
+}
+
+main {
+    height: 430px;   
+    background-image: url(none);
+    background-color: rgba(214, 134, 248, 0.5); 
+    padding: 10px 0;   
+}
+
+.titulo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27pt;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 8px;
+    letter-spacing: 10px;
+}
+
+.titulo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px; 
+    font-size: 100pt;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 10px;
+}
+
+.titulo1 h1 {
+    padding-top: 85px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    color: rgb(91, 89, 91);
+}
+
+.titulo1 h2 {
+    text-align: center;
+    font-size: 23pt;
+    color: rgb(91, 89, 91);
+}
+
+.titulo1 p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11.5pt;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    color: rgb(46, 45, 46);
+}
+
+.carrinho {
+    padding: 60px 120px ;
+    border: 1px solid rgb(242, 241, 242);
+    box-shadow: 15px #000000;
+    background-color: rgba(214, 134, 248, 0.5); 
+    margin: 0 auto;
+    max-width: 750px;
+    width: 100%;
+}
+
+.titulo1 h3, h4, h5 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11.5pt;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    color: rgb(56, 56, 56);
+}
+
+.buttons5 {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons5 button {
+    height: 32px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid rgba(78, 77, 78, 1);
+    border-radius: 1px;
+    background-color: transparent;
+    color: rgb(46, 45, 46);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family:Arial ;
+    font-weight: bold;
+    box-shadow: 1px  #000000;
+}
+
+.buttons5 button:hover {
+    background-color: rgba(78, 77, 78, 1);
+    border: none;
+    color: rgb(255, 255, 255); 
+}
+
+.buttons5 button {
+    padding-bottom: 25px; 
+}
+
+.buttons5 button {
+    background-color:rgb(229, 229, 229);
+    border: 2px solid rgba(78, 77, 78, 1);
+    font-size: 14px;
+}
+
+.banner-eventos {
+    width: 100%;
+    height: 680px; 
+}
+
