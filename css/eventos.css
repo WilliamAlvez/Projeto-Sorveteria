@@ -20,7 +20,7 @@ main {
 
 .titulo h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 27pt;
+    font-size: 1.7rem;
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
     margin-bottom: 8px;
     letter-spacing: 10px;
@@ -29,7 +29,7 @@ main {
 .titulo h2 {
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 100px; 
-    font-size: 100pt;
+    font-size: 6.25rem;
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 10px;
 }
@@ -38,20 +38,20 @@ main {
     padding-top: 85px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25pt;
+    font-size: 1.6rem;
     color: rgb(91, 89, 91);
 }
 
 .titulo1 h2 {
     text-align: center;
-    font-size: 23pt;
+    font-size: 1.5rem;
     color: rgb(91, 89, 91);
 }
 
 .titulo1 p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11.5pt;
+    font-size: 0.72rem;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -72,7 +72,7 @@ main {
 .titulo1 h3, h4, h5 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11.5pt;
+    font-size: 0.72rem;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -92,7 +92,7 @@ main {
     height: 32px;
     text-align: center;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 2px solid rgba(78, 77, 78, 1);
     border-radius: 1px;
     background-color: transparent;
@@ -117,7 +117,7 @@ main {
 .buttons5 button {
     background-color:rgb(229, 229, 229);
     border: 2px solid rgba(78, 77, 78, 1);
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .banner-eventos {
@@ -125,3 +125,69 @@ main {
     height: 680px; 
 }
 
+/* Media query para telas menores (mobile) */
+
+@media screen and (max-width: 768px) {
+    main {
+        height: 330px;
+    }   
+    
+    .titulo h1 {
+        font-size: 1.3rem;
+    }
+
+    .titulo h2 {
+        padding-bottom: 100px; 
+        font-size: 3.0rem;
+        padding-bottom: 0px;
+    }
+
+    .titulo1 h1 {
+        padding-top: 55px;
+        font-size: 1.3rem;
+    }
+    
+    .titulo1 h2 {
+        font-size: 1.2rem;
+    }
+    
+    .titulo1 p {
+        margin-top: 20px;
+        font-size: 0.58rem;
+    }
+
+    .titulo1 h3, h4, h5 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.72rem;
+        margin-top: 20px;
+        margin-right: 210px;
+        margin-left: -30px;
+    }
+    
+    .buttons5 {
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px;
+        margin-right: 210px;
+        margin-left: -30px;
+    }
+    
+    .buttons5 button {
+        height: 25px;
+        text-align: center;
+        padding: 5px 10px;
+    }
+        
+    .buttons5 button {
+        background-color:rgb(229, 229, 229);
+        border: 2px solid rgba(78, 77, 78, 1);
+        font-size: 0.6rem;
+    }
+    
+    .banner-eventos {
+        width: 100%;
+        height: 400px; 
+    }
+
+}

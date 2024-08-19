@@ -31,7 +31,7 @@ main {
 .buttons6 button {
     height: 32px;
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
     background-color: transparent;
     color: rgb(46, 45, 46);
     cursor: pointer;
@@ -58,19 +58,19 @@ main {
 
 .titulo1 h1 {
     padding-top: 55px;
-    font-size: 25pt;
+    font-size: 1.6rem;
     color: rgb(24, 24, 24);
 }
 
 .titulo1 h2 {
     padding-top: 20px;
-    font-size: 11pt;
+    font-size: 0.7rem;
     color: rgb(48, 47, 48);
 }
 
 .titulo1 h3 {
     padding-top: 40px;
-    font-size: 15pt;
+    font-size: 1rem;
     color: rgb(56, 56, 56);
     margin-top: 20px;
 }
@@ -78,7 +78,8 @@ main {
 #calendar {
     max-width: 450px;
     margin: 40px auto;
-
+    border: 1px solid #000000;
+    cursor: pointer;
 }
 
 #horarios-disponiveis {
@@ -89,7 +90,7 @@ main {
     display:flexbox;
     margin: 5px 5px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.9rem;
     border: 1px solid #007bff;
     border-radius: 4px;
     background-color: #f8f9fa;
@@ -111,7 +112,7 @@ main {
 }
 .carrinho h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 0.75rem;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -129,7 +130,7 @@ main {
     height: 32px;
     text-align: center;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 2px solid rgba(78, 77, 78, 1);
     border-radius: 1px;
     background-color:rgb(229, 229, 229);
@@ -139,8 +140,6 @@ main {
     font-family: Arial;
     font-weight: bold;
     box-shadow: 1px #000000;
-    font-size: 14px;
-
 }
 
 .buttons5 button:hover {
@@ -149,5 +148,97 @@ main {
     color: rgb(255, 255, 255); 
 }
 
+/* Media query para telas menores (mobile) */
 
+@media screen and (max-width: 768px) {
 
+    .buttons6 button {
+        font-size: 0.9rem;
+    }
+
+    .titulo1 {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .titulo1 h1, .titulo1 h2, .titulo1 h3 {
+        text-align: left; 
+        max-width: 340px; 
+        width: 100%; 
+    }
+    
+    .titulo1 h1 {
+        padding-top: 35px;
+        font-size: 1.2rem;
+    }
+    
+    .titulo1 h2 {
+        padding-top: 10px;
+        font-size: 0.7rem;
+    }
+    
+    .titulo1 h3 {
+        padding-top: 20px;
+        font-size: 1rem;
+        color: rgb(24, 24, 24);
+        margin-top: 20px;
+    }
+    /* Estilo do calendário */
+    #calendar {
+        max-width: 450px;
+        margin: 20px auto;
+        border: 1px solid #000000;
+        cursor: pointer;
+    }
+    
+    #horarios-disponiveis {
+        margin-top: 10px;
+    }
+    
+    #horarios-disponiveis button {
+        display:flexbox;
+        margin: 5px 5px;
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    
+    #horarios-disponiveis button:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    .carrinho {
+        justify-content:center; 
+        align-items:center; 
+        text-align: center; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .carrinho h4, h5, h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.75rem;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(56, 56, 56);
+    }
+    
+    /* Estilo do botão */
+    .buttons5 {
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px;
+    }
+    
+    .buttons5 button {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .buttons5 button:hover {
+        background-color: rgba(78, 77, 78, 1);
+        border: none;
+        color: rgb(255, 255, 255); 
+    }
+    
+}
